@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ComplectsShow</title>
+</head>
+<body>
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+
+        <th>Name</th>
+
+        <th>Brand</th>
+
+        <th>Color</th>
+
+    </tr>
+
+    <tr th:each="rta : ${complectsshow}">
+
+        <td th:utext="${complects.id}"></td>
+
+        <td th:utext="${complects.complectsName}"></td>
+
+        <td th:utext="${complects.complectsBrand}"></td>
+
+        <td th:utext="${complects.complectsColor}"></td>
+
+
+    </tr>
+
+</table>
+
+</body>
+</html>

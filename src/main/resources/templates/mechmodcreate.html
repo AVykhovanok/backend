@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MechmodCreate</title>
+</head>
+<body>
+<form th:action="@{/mechmodcreate}"
+      th:object="${mechmodmodel}" method="post">
+
+    Name <input type="text" th:field="*{mechmodName}">
+
+    Brand <input type="text" th:field="*{mechmodBrand}">
+
+    Color <input type="text" th:field="*{mechmodColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

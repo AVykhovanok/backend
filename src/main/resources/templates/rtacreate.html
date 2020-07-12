@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rta Create</title>
+</head>
+<body>
+<form th:action="@{/rtacreate}"
+      th:object="${rtamodel}" method="post">
+
+    Name <input type="text" th:field="*{rtaName}">
+
+    Brand <input type="text" th:field="*{rtaBrand}">
+
+    Color <input type="text" th:field="*{rtaColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ComplectsCreate</title>
+</head>
+<body>
+<form th:action="@{/complectscreate}"
+      th:object="${complectsmodel}" method="post">
+
+    Name <input type="text" th:field="*{complectsName}">
+
+    Brand <input type="text" th:field="*{complectsBrand}">
+
+    Color <input type="text" th:field="*{complectsColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

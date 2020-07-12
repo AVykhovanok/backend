@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>AccessoriesCreate</title>
+</head>
+<body>
+<form th:action="@{/accessoriescreate}"
+      th:object="${accessoriesmodel}" method="post">
+
+    Name <input type="text" th:field="*{accessoriesName}">
+
+    Brand <input type="text" th:field="*{accessoriesBrand}">
+
+    Color <input type="text" th:field="*{accessoriesColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

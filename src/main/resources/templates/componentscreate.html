@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ComponentsCreate</title>
+</head>
+<body>
+<form th:action="@{/componentscreate}"
+      th:object="${componentsmodel}" method="post">
+
+    Name <input type="text" th:field="*{componentsName}">
+
+    Brand <input type="text" th:field="*{componentsBrand}">
+
+    Color <input type="text" th:field="*{componentsColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

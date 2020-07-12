@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BatteryShow</title>
+</head>
+<body>
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+
+        <th>Name</th>
+
+        <th>Brand</th>
+
+        <th>Color</th>
+
+    </tr>
+
+    <tr th:each="rta : ${batteryshow}">
+
+        <td th:utext="${battery.id}"></td>
+
+        <td th:utext="${battery.batteryName}"></td>
+
+        <td th:utext="${battery.batteryBrand}"></td>
+
+        <td th:utext="${battery.batteryColor}"></td>
+
+
+    </tr>
+
+</table>
+
+</body>
+</html>

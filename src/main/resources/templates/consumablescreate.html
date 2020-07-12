@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ConsumablesCreate</title>
+</head>
+<body>
+<form th:action="@{/consumablescreate}"
+      th:object="${consumablesmodel}" method="post">
+
+    Name <input type="text" th:field="*{consumablesName}">
+
+    Brand <input type="text" th:field="*{consumablesBrand}">
+
+    Color <input type="text" th:field="*{consumablesColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

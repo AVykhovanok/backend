@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ConsumablesShow</title>
+</head>
+<body>
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+
+        <th>Name</th>
+
+        <th>Brand</th>
+
+        <th>Color</th>
+
+    </tr>
+
+    <tr th:each="rta : ${consumablesshow}">
+
+        <td th:utext="${consumables.id}"></td>
+
+        <td th:utext="${consumables.consumablesName}"></td>
+
+        <td th:utext="${consumables.consumablesBrand}"></td>
+
+        <td th:utext="${consumables.consumablesColor}"></td>
+
+
+    </tr>
+
+</table>
+
+</body>
+</html>

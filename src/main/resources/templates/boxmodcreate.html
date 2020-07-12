@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BoxmodCreate</title>
+</head>
+<body>
+<form th:action="@{/boxmodcreate}"
+      th:object="${boxmodmodel}" method="post">
+
+    Name <input type="text" th:field="*{boxmodName}">
+
+    Brand <input type="text" th:field="*{boxmodBrand}">
+
+    Color <input type="text" th:field="*{boxmodColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

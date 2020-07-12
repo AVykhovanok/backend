@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ChargerCreate</title>
+</head>
+<body>
+<form th:action="@{/chargercreate}"
+      th:object="${chargermodel}" method="post">
+
+    Name <input type="text" th:field="*{chargerName}">
+
+    Brand <input type="text" th:field="*{chargerBrand}">
+
+    Color <input type="text" th:field="*{chargerColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

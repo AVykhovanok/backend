@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rdta Create</title>
+</head>
+<body>
+<form th:action="@{/rdtacreate}"
+      th:object="${rdtamodel}" method="post">
+
+    Name <input type="text" th:field="*{rdtaName}">
+
+    Brand <input type="text" th:field="*{rdtaBrand}">
+
+    Color <input type="text" th:field="*{rdtaColor}">
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

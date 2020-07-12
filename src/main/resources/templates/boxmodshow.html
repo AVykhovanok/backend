@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BoxmodShow</title>
+</head>
+<body>
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+
+        <th>Name</th>
+
+        <th>Brand</th>
+
+        <th>Color</th>
+
+    </tr>
+
+    <tr th:each="rta : ${boxmodshow}">
+
+        <td th:utext="${boxmod.id}"></td>
+
+        <td th:utext="${boxmod.boxmodName}"></td>
+
+        <td th:utext="${boxmod.boxmodBrand}"></td>
+
+        <td th:utext="${boxmod.boxmodColor}"></td>
+
+
+    </tr>
+
+</table>
+
+</body>
+</html>

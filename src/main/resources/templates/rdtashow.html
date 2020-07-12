@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>RdtaShow</title>
+</head>
+<body>
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+
+        <th>Name</th>
+
+        <th>Brand</th>
+
+        <th>Color</th>
+
+    </tr>
+
+    <tr th:each="rta : ${rdtashow}">
+
+        <td th:utext="${rdta.id}"></td>
+
+        <td th:utext="${rdta.rdtaName}"></td>
+
+        <td th:utext="${rdta.rdtaBrand}"></td>
+
+        <td th:utext="${rdta.rdtaColor}"></td>
+
+
+    </tr>
+
+</table>
+
+</body>
+</html>
